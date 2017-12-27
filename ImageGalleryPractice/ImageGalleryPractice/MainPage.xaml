@@ -12,8 +12,8 @@
             VerticalOptions="Center"
             HorizontalOptions="Center">
             <Button
-                Text="Previous"
-                HorizontalOptions="Center"/>
+                BackgroundColor="#424242"
+                Image="left"/>
             <ActivityIndicator
                 Color="White"
                 IsRunning="{Binding
@@ -22,8 +22,8 @@
                 HorizontalOptions="CenterAndExpand"
                 Margin="30,0,30,0"/>
             <Button
-                Text="Next"
-                HorizontalOptions="Center"/>
+                BackgroundColor="#424242"
+                Image="right"/>
         </StackLayout>
 
         <Image x:Name="image"
