@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -62,6 +62,14 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\drawable\left" />
+    <AndroidResource Include="Resources\drawable\right" />
+    <AndroidResource Include="Resources\drawable-hdpi\left" />
+    <AndroidResource Include="Resources\drawable-hdpi\right" />
+    <AndroidResource Include="Resources\drawable-xhdpi\left" />
+    <AndroidResource Include="Resources\drawable-xhdpi\right" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\left" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\right" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
@@ -79,14 +87,11 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\ImageGalleryPractice\ImageGalleryPractice.csproj">
       <Project>{620F8EBD-1BD2-4F25-86E0-0E8DD903F596}</Project>
       <Name>ImageGalleryPractice</Name>
     </ProjectReference>
   </ItemGroup>
-
-
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
