@@ -39,6 +39,14 @@ namespace ImageGalleryPractice
             LoadImage();
         }
 
+        private void RightButton(Object sender, EventArgs e)
+        {
+            _pictureId++;
+            if (_pictureId == 11)
+                _pictureId = 1;
+
+            LoadImage();
+        }
 
 
     }
