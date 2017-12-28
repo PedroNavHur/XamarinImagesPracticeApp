@@ -5,6 +5,13 @@
              x:Class="ImageGalleryPractice.MainPage"
              BackgroundColor="Black">
     <AbsoluteLayout>
+        
+        <Image x:Name="image"
+            AbsoluteLayout.LayoutBounds="0, 0.3, 1, 0.6"
+            AbsoluteLayout.LayoutFlags="All"
+            Source="http://lorempixel.com/1920/1080/city/1"
+            Aspect="AspectFit"/>
+        
         <StackLayout
             AbsoluteLayout.LayoutBounds="0,0.05,1,0.2"
             AbsoluteLayout.LayoutFlags="All"
@@ -27,12 +34,6 @@
                 BackgroundColor="#424242"
                 Image="right"/>
         </StackLayout>
-
-        <Image x:Name="image"
-            AbsoluteLayout.LayoutBounds="0, 0.3, 1, 0.6"
-            AbsoluteLayout.LayoutFlags="All"
-            Source="http://lorempixel.com/1920/1080/city/1"
-            Aspect="AspectFit"/>
 
     </AbsoluteLayout>
 

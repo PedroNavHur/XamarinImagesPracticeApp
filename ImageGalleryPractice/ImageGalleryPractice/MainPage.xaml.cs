@@ -9,7 +9,7 @@ namespace ImageGalleryPractice
 {
     public partial class MainPage : ContentPage
     {
-        private Int16 _pictureId = 1;
+        Int16 _pictureId = 1;
 
         public MainPage()
         {
@@ -19,7 +19,7 @@ namespace ImageGalleryPractice
 
         }
 
-        private void LoadImage()
+        void LoadImage()
         {
             image.Source = new UriImageSource
             {
@@ -30,7 +30,7 @@ namespace ImageGalleryPractice
         }
 
 
-        private void LeftButton(Object sender, EventArgs e)
+        void LeftButton(Object sender, EventArgs e)
         {
             _pictureId--;
             if (_pictureId == 0)
@@ -39,7 +39,7 @@ namespace ImageGalleryPractice
             LoadImage();
         }
 
-        private void RightButton(Object sender, EventArgs e)
+        void RightButton(Object sender, EventArgs e)
         {
             _pictureId++;
             if (_pictureId == 11)
