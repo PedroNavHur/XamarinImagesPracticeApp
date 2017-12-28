@@ -12,6 +12,7 @@
             VerticalOptions="Center"
             HorizontalOptions="Center">
             <Button
+                Clicked="LeftButton"
                 BackgroundColor="#424242"
                 Image="left"/>
             <ActivityIndicator
@@ -22,6 +23,7 @@
                 HorizontalOptions="CenterAndExpand"
                 Margin="30,0,30,0"/>
             <Button
+                Clicked="RightButton"
                 BackgroundColor="#424242"
                 Image="right"/>
         </StackLayout>
